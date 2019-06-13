@@ -15,14 +15,13 @@ def verPrim(n):
             if n%i==0:
                 return False
     return True
-        
+
 n = int(input("Ingrese un numero mayor a 1: "))
 
 if n>=0:
     if verPrim(n):
-        print("El numero es primo")    
+        print("El numero es primo")
     else:
         print("El numero no es primo")
 else:
     print("El numero es negativo")
-
