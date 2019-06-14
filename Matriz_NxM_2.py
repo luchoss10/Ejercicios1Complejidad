@@ -16,7 +16,6 @@ def MNMatriz(N, M):
 
     return matriz
 
-
 N =  int(input("Ingrese el numero de filas de la matriz: "))
 M =  int(input("Ingrese el numero de columnas de la matriz: "))
 
