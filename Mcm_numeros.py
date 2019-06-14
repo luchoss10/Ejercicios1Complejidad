@@ -4,27 +4,30 @@
 # Pre: n y m > 0 los numeros introducidos deben ser mayores que 0
 # Post: Entrega el mcm de ambos numeros
 #
+# Complejidad =  O(8) + O(5n)
+# Complejidad = O(n) por teorema 2
+#
 
 import sys
 
 def McmNum(n, m):
     
-    if n > 0 and m > 0:
-        if n > m:
-            maximo = n
-        else:
-            maximo = m
-        while True:
-            if maximo % n == 0 and maximo % m == 0:
-                mcm = maximo
-                break
-            maximo += 1
+    if n > 0 and m > 0: #O(1)
+        if n > m: #O(1)
+            maximo = n #O(1)
+        else: #O(1)
+            maximo = m #O(1)
+        while True: #O(5n)
+            if maximo % n == 0 and maximo % m == 0: #O(1)
+                mcm = maximo #O(1)
+                break #O(1)
+            maximo += 1 #O(1)
 
-        return mcm
+        return mcm #O(1)
 
-    else:
-        print("Alguno de los numeros es menor que 0")
-        sys.exit(True)
+    else: #O(1)
+        print("Alguno de los numeros es menor que 0") #O(1)
+        sys.exit(True) #O(1)
 
 
 n = int(input("Ingrese el primer número: "))

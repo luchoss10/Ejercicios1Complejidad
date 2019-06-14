@@ -4,6 +4,9 @@
 # Pre: n >= 0 El numero ingresado debe ser positivo o 0
 # Post: Entrega el valor del n número de la serie de fibonacci
 #
+# Complejidad =  O() + O(
+# Complejidad = O( por teorema 2
+#
 
 def fibonacci(num):
     if num == 0 or num==1:

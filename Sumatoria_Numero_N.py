@@ -4,15 +4,18 @@
 # Pre: N>=1 El número N debe ser mayor que 1 para empezar la sumatoria
 # Post: Se debe entregar la suma de todos los numeros hasta el numero N
 #
+# Complejidad = O(5) + O(n)
+# Complejidad = O(n) por teorema 2
+#
 
 def sumatoria(n):
-    if n >=1:
-        j = 0
-        for i in range(0, n):
-           j = i+j
-        return j
-    else:
-        return "El numero es negativo"
+    if n >=1: #O(1)
+        j = 0 # O(1)
+        for i in range(0, n): # O(n)
+           j = i+j #O(1) 
+        return j # O(1)
+    else: #O(1)
+        return "El numero es negativo" #O(1)
     
 
 num = int(input("Ingrese un numero para sumatoria: "))
