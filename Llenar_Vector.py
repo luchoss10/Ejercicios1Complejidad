@@ -1,12 +1,13 @@
 # 3) Hacer una función que llene un vector 
-#  (de tamaño N) con números enteros aleatorios (puede ser de 4 cifras)
+#   (de tamaño N) con números enteros aleatorios (puede ser de 4 cifras)
 #
 #   Pre: N>=1 El tamaño del vector esta dado po N y deve ser mayor o igual 1
 #   Post: Entrega el vector de tamaño N con los datos aleatorios
-#
+#   
 #   Complejidad = O(2) + O(n)
 #   Complejidad = O(n) por teorema 2
-#
+#   +
+
 
 import random
 

@@ -6,6 +6,7 @@
 #
 # Complejidad = O(5) + O(n)
 # Complejidad = O(n) por teorema 2
+# Complejidad Sumatoria por formula = O(1)
 #
 
 def sumatoria(n):
@@ -16,8 +17,13 @@ def sumatoria(n):
         return j # O(1)
     else: #O(1)
         return "El numero es negativo" #O(1)
-    
 
+def SumatoriaFomula(n):
+    if n>= 1: #O(!)
+        return (n*(n+1))/2 #O(1)
+    else:
+        return "El numero es negativo" #O(1)
+    
 num = int(input("Ingrese un numero para sumatoria: "))
 
 print(str(sumatoria(num)))
